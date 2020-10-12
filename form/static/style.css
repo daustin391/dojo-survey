@@ -1,0 +1,58 @@
+/* html { box-sizing: border-box; }
+
+*,
+*::before,
+*::after { box-sizing: inherit; } */
+
+select,
+input[type='text'],
+textarea,
+body { 
+    background-color: #e85252;
+    color: #000000;
+}
+
+select,
+body,
+button,
+input[type='text'],
+textarea {
+    line-height: 1.45;
+    font-size: 18px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+:focus { outline: 5px auto #fdf854; }
+
+button {
+    background-color: #80f557;
+    color: #e85252;
+    box-shadow: 2px 2px #000000;
+    margin-left: auto;
+    grid-column: 2;
+    cursor: pointer;
+}
+
+form {
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+}
+
+select,
+input[type='text'],
+textarea,
+button,
+form { border: 2px solid #000000; }
+
+select,
+input[type='text'],
+textarea { padding: 5px 8px; }
+
+textarea { grid-column: span 2; }
+
+
