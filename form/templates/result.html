@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey Index</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <h1>Submitted Info</h1>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Name:</td>
+                    <td>{{name}}</td>
+                </tr>
+                <tr>
+                    <td>Dojo Location:</td>
+                    <td>{{location}}</td>
+                </tr>
+                <tr>
+                    <td>Favorite Language:</td>
+                    <td>{{language}}</td>
+                </tr>
+                <tr>
+                    <td>Comment:</td>
+                    <td>{{comment}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="/">Go Back</a>
+    </main>
+</body>
+
+</html>

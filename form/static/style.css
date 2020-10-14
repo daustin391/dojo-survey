@@ -12,6 +12,7 @@ body {
     color: #000000;
 }
 
+a,
 select,
 body,
 button,
@@ -22,27 +23,60 @@ textarea {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+a { 
+    text-decoration: none; 
+    display: inline-block;
+    padding: 1px 3px;
+    box-sizing: border-box;
+}
+
 :focus { outline: 5px auto #fdf854; }
 
+a,
 button {
     background-color: #80f557;
     color: #e85252;
     box-shadow: 2px 2px #000000;
     margin-left: auto;
-    grid-column: 2;
     cursor: pointer;
+    width: 80px;
+    height: 30px;
 }
 
+button { grid-column: 2; }
+
+main,
 form {
     max-width: 700px;
+    height: 75vh;
     margin: 0 auto;
     margin-top: 50px;
     padding: 25px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form {
     display: grid;
     grid-template-columns: auto 1fr;
+    grid-template-rows: repeat(4, auto) 1fr auto;
     gap: 10px;
 }
 
+td { width: 50%; }
+
+
+h1 { 
+    text-decoration: underline; 
+    text-align: start;
+}
+
+a,
+main,
 select,
 input[type='text'],
 textarea,
@@ -53,6 +87,9 @@ select,
 input[type='text'],
 textarea { padding: 5px 8px; }
 
-textarea { grid-column: span 2; }
+textarea { 
+    grid-column: span 2;
+    max-height: 290px;
+}
 
 

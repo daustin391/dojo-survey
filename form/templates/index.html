@@ -10,38 +10,39 @@
 </head>
 
 <body>
-    <form action="" method="post">
+    <form action="/result" method="post">
+        {% csrf_token %}
         <label for="name">Your Name:</label>
         <input type="text" name="name" id="name">
         <label for="location">Dojo Location: </label>
         <select name="location" id="location">
-            <option value="arlington">Arlington</option>
-            <option value="bellevue">Bellevue</option>
-            <option value="boise">Boise</option>
-            <option value="chicago">Chicago</option>
-            <option value="dallas">Dallas</option>
-            <option value="la">Los Angeles</option>
-            <option value="oakland">Oakland</option>
-            <option value="oc">Orange County</option>
-            <option value="san-jose">San Jose</option>
-            <option value="tulsa">Tulsa</option>
+            <option value="Arlington">Arlington</option>
+            <option value="Bellevue">Bellevue</option>
+            <option value="Boise">Boise</option>
+            <option value="Chicago">Chicago</option>
+            <option value="Dallas">Dallas</option>
+            <option value="Los Angeles">Los Angeles</option>
+            <option value="Oakland">Oakland</option>
+            <option value="Orange County">Orange County</option>
+            <option value="San Jose">San Jose</option>
+            <option value="Tulsa">Tulsa</option>
         </select>
         <label for="language">Favorite Language: </label>
         <select name="language" id="language">
-            <option value="javascript">JavaScript</option>
-            <option value="html">HTML/CSS</option>
-            <option value="sql">SQL</option>
-            <option value="python">Python</option>
-            <option value="java">Java</option>
-            <option value="bash">Bash/Shell/PowerShell</option>
-            <option value="c-sharp">C#</option>
-            <option value="php">PHP</option>
-            <option value="c-plus-plus">C++</option>
-            <option value="typescript">TypeScript</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="HTML/CSS">HTML/CSS</option>
+            <option value="SQL">SQL</option>
+            <option value="Python">Python</option>
+            <option value="Java">Java</option>
+            <option value="Bash/Shell/PowerShell">Bash/Shell/PowerShell</option>
+            <option value="C#">C#</option>
+            <option value="PHP">PHP</option>
+            <option value="C++">C++</option>
+            <option value="TypeScript">TypeScript</option>
         </select>
         <label for="comment">Comment (optional): </label>
-        <textarea name="comment" id="comment" rows="10"></textarea>
-        <button type="submit">Button</button>
+        <textarea name="comment" id="comment"></textarea>
+        <button type="submit">Submit</button>
     </form>
 </body>
 
